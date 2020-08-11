@@ -1,4 +1,4 @@
-# erp
+# VueStartupTemplate
 
 ## Project setup
 ```
