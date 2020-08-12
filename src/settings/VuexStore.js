@@ -1,13 +1,11 @@
 import Vuex from 'vuex'
 import Vue from "vue";
+import User from "../models/User";
 
 Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
-        user: {
-            username: 'Peter',
-            isAuthorized: false
-        }
+        user: new User({username: 'Peter', isAdmin: true})
     },
     mutations: {
         setUser(state, newUser) {

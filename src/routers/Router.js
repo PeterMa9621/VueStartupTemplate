@@ -4,12 +4,14 @@ import HomePage from "../pages/HomePage";
 import store from "../settings/VuexStore";
 import authMiddleware from "../middleware/auth/AuthMiddleware";
 import LoginPage from "../pages/LoginPage";
+import AboutPage from "../pages/AboutPage";
 
 Vue.use(VueRouter);
 
 const routes = [
     {path: '/', component: HomePage, name: 'home', meta: {middleware:[authMiddleware]}},
-    {path: '/login', component: LoginPage, name: 'login'}
+    {path: '/login', component: LoginPage, name: 'login'},
+    {path: '/about', component: AboutPage, name: 'about'}
 ];
 
 const router = new VueRouter({
