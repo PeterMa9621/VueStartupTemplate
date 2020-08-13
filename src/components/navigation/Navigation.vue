@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: 100">
         <router-link class="navbar-brand" to="/">
             <img src="../../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Application Name
