@@ -36,20 +36,26 @@
 </template>
 
 <script>
+    import User from "../models/User";
+
     export default {
         name: "LoginPage",
         data() {
             return {
                 query: [],
-                msg: 'This is a test'
+                msg: 'This is a test',
+                params: []
             }
         },
         mounted() {
             this.query = this.$route.query;
+            this.params = this.$route.params;
         },
         methods: {
             login() {
+                this.$store.state.dispatch('setUser', new User({}));
                 console.log('login');
+                this.$router.push({name: 'home'});
             }
         }
     }

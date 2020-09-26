@@ -8,13 +8,13 @@ const store = new Vuex.Store({
         user: new User({username: 'Peter', isAdmin: true})
     },
     mutations: {
-        setUser(state, newUser) {
+        SET_USER(state, newUser) {
             state.user = newUser;
         }
     },
     actions: {
         setUser({commit}, newUser) {
-            commit.setUser(newUser);
+            commit('SET_USER', newUser);
         }
     }
 });

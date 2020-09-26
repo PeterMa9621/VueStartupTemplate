@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-
     <div class="card">
       <div class="card-header">
         This is header
